@@ -32,11 +32,6 @@ body::-webkit-scrollbar {
     width: 250px;
     height: 100vh;
     transition: all 0.5s ease-in-out;
-    opacity: 0;
-}
-
-.side-navbar:hover {
-    opacity: 100;
 }
 
 .side-navbar .navbar-buttons {
