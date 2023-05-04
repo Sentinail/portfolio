@@ -2,6 +2,11 @@
 body {
     background-color: #191D2B;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+p {
+    font-size: 20px;
 }
 
 body::-webkit-scrollbar {
@@ -139,12 +144,14 @@ body::-webkit-scrollbar {
     margin: 20px;
     margin-top: 50px;
     max-width: 485px;
+    text-align: left;
 }
 
 .non-bs-introduction-right p {
     margin: 20px;
     margin-top: 50px;
     max-width: 485px;
+    text-align: left;
 }
 
 .non-bs-introduction-right p {
@@ -226,15 +233,22 @@ body::-webkit-scrollbar {
     margin: 20px;
     margin-top: 50px;
     max-width: 485px;
+    text-align: left;
+}
+
+.non-bs-about-me .bottom .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .non-bs-about-me .bottom .right .cards {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 35% 35%;
     grid-template-rows: 200px 200px;
-    grid-gap: 10px;
+    grid-gap: 20px;
 }
 
 .non-bs-about-me .bottom .right .cards h1 {
@@ -249,6 +263,8 @@ body::-webkit-scrollbar {
     box-shadow: 0px -1px 18px 1px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px -1px 18px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px -1px 18px 1px rgba(0,0,0,0.75);
+    height: 100%;
+    width: 100%;
 }
 
 .skills {
@@ -382,6 +398,10 @@ body::-webkit-scrollbar {
     border-bottom: #27AE60 2px solid;
 }
 
+.contacts p {
+    word-break: break-word;
+}
+
 .your-message {
     display: flex;
     flex-direction: column;
@@ -426,17 +446,23 @@ form {
     align-self: center;
 }
 
-.icons {
+.contact-me-bottom {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
-.icons img {
-    height: auto;
-    width: 50px;
-    margin: 50px;
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.icons img {
+    height: 50px;
+    width: auto;
+    margin: 20px;
 }
 
 .icons img:hover {
