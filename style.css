@@ -151,6 +151,10 @@ body::-webkit-scrollbar {
     line-height: 2rem;
 }
 
+.non-bs-introduction-right a {
+    text-decoration: none;
+}
+
 
 .non-bs-introduction .left img {
     width: 50%;
@@ -160,6 +164,32 @@ body::-webkit-scrollbar {
 
 .non-bs-introduction .left {
     height: 100%;
+}
+
+.curriculum-vitae {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #323B54;
+    height: 50px;
+    width: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+    
+}
+
+
+
+.curriculum-vitae:hover {
+    cursor: pointer;
+    scale: 1.2;
+    background-color: #27AE60;
+
+}
+
+.curriculum-vitae p {
+    margin: 0;
 }
 
 /* ABOUT ME */
