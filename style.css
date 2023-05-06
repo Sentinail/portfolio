@@ -529,7 +529,11 @@ footer p{
         flex-direction: row;
         height: 100px;
         width: 100vw;
-        bottom: 0px;
+        top: 0px;
         opacity: 100;
+    }
+
+    .side-navbar a {
+        top: -12px;
     }
 }
