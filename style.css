@@ -26,6 +26,10 @@ body::-webkit-scrollbar {
     color: #27AE60;
 }
 
+.top h1 {
+    font-size: 4rem !important;
+}
+
 /* SIDE NAVBAR */
 .side-navbar {
     display: flex;
@@ -217,10 +221,6 @@ body::-webkit-scrollbar {
     
 }
 
-.non-bs-about-me .row .top h1 {
-    font-size: 10vw;
-}
-
 .non-bs-about-me-text {
     display: flex;
     flex-direction: column;
@@ -319,10 +319,6 @@ body::-webkit-scrollbar {
     
 }
 
-.non-bs-my-portfolio .row .top h1 {
-    font-size: 10vw;
-}
-
 .portfolio {
     display: grid;
     justify-content: center;
@@ -349,7 +345,7 @@ body::-webkit-scrollbar {
 
 .portfolio-img img:hover {
     cursor: pointer;
-    scale: 1.1;
+    scale: 1.2;
 }
 
 /* CONTACT ME */
@@ -369,14 +365,6 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     height: 70vh;
-}
-
-.non-bs-contact-me .row .top h1 {
-    font-size: 10vw;
-}
-
-.non-bs-contact-me .row .top h1 {
-    font-size: 10vw;
 }
 
 .non-bs-contact-me h1 {
@@ -459,14 +447,25 @@ form {
     margin-bottom: 100px;
 }
 
-.icons img {
+.icons .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
     height: 50px;
-    width: auto;
-    margin: 20px;
+    overflow: hidden;
+    background-color: #323B54;
+    border-radius: 50%;
+} 
+
+.icons .icon img {
+    height: 35px;
+    width: 35px;
 }
 
-.icons img:hover {
+.icon:hover {
     scale: 1.2;
+    background-color: #27AE60;
 }
 
 /* FOOTER */
