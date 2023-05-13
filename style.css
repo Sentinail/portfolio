@@ -345,8 +345,9 @@ body::-webkit-scrollbar {
 }
 
 .portfolio-img img:hover {
+    z-index: 9999;
     cursor: pointer;
-    scale: 1.2;
+    scale: 1.1;
 }
 
 /* CONTACT ME */
