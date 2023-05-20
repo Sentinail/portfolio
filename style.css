@@ -347,17 +347,6 @@ body::-webkit-scrollbar {
     
 }
 
-.portfolio {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-rows: auto;
-    grid-gap: 2rem;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 100px;
-}
-
 .non-bs-modal {
     display: none;
     position: fixed;
@@ -413,9 +402,47 @@ body::-webkit-scrollbar {
     height: auto;
 }
 
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+
+.portfolio .portfolio-items {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #323B54;
+    border-bottom: 2px solid #323B54;
+    border-radius: 10px;
+}
+
+.portfolio-items:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .portfolio-img {
-    width: 100%;
-    height: 100%;
+    width: 40%;
+}
+
+.portfolio-content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+   
+}
+
+.portfolio-content p {
+    text-align: left;
+    max-width: 700px;
 }
 
 .portfolio-img img {
@@ -585,19 +612,6 @@ footer p{
       grid-template-columns: repeat(2, 1fr);
     }
 
-    .portfolio {
-        grid-template-columns: repeat(2, 1fr);
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-} 
-
-@media screen and (min-width: 992px) {
-    .portfolio {
-        grid-template-columns: repeat(3, 1fr);
-        margin-left: 100px;
-        margin-right: 100px;
-    }
 } 
 
 @media screen and (max-width: 555px) {
@@ -609,6 +623,7 @@ footer p{
         clip-path: polygon(79% 71%, 100% 23%, 100% 100%, 32% 100%);
         width: 100%;
     }
+
 }
 
 @media screen and (max-width: 880px) {
@@ -631,6 +646,27 @@ footer p{
 
     .side-navbar a {
         top: -12px;
+    }
+
+    .portfolio .portfolio-items {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .portfolio-content, .portfolio-img {
+        width: 100%;
+    }
+
+    .portfolio-content {
+        padding: 0px;
+    }
+
+    .portfolio-content p {
+        text-align: center;
+    }
+
+    .contact-me-bottom {
+        padding: 50px 0px 50px 0px;
     }
 }
 
