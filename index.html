@@ -51,7 +51,7 @@
 
         <div class="row" style="z-index: 2;">
 
-            <div class="left col-md-6 col-sm-12">
+            <div class="left col-md-6 col-sm-12 left-right">
                 
                 <div class="non-bs-introduction-left">
                     <img src="images/more_images/Portrait.jpg" alt="">
@@ -59,7 +59,7 @@
 
             </div>
 
-            <div class="right col-md-6 col-sm-12">
+            <div class="right col-md-6 col-sm-12 right-left">
 
                 <div class="non-bs-introduction-right">
 
@@ -87,13 +87,13 @@
     <div class="non-bs-about-me container-fluid" style="z-index: 3;" id="user">
         <div class="row">
             <div class="top">
-                <h1><b>ABOUT <span class="colored">ME</span></b></h1>
+                <h1 class="h1-header hidden"><b>ABOUT <span class="colored">ME</span></b></h1>
             </div>
         </div>
         
         <div class="bottom row">
 
-            <div class="left col-lg-6 col-sm-12">
+            <div class="left col-lg-6 col-sm-12 left-right">
                 <div class="non-bs-about-me-text container-fluid">
                     <h1><b>INFORMATION ABOUT <span class="colored">ME</span></b></h1>
                     <p>I'm a curious and driven individual with a passion for web development. 
@@ -109,7 +109,7 @@
                 </div>
             </div>
 
-            <div class="right col-lg-6 col-sm-12">
+            <div class="right col-lg-6 col-sm-12 right-left">
 
                 <div class="cards container-fluid">
                     <div class="projects-completed">
@@ -134,54 +134,47 @@
 
         </div>
         
-        <div class="bottom-2 row">
-
-            <div class="skills">
-                <h1><b>MY SKILLS</b></h1>
+        <div class="skills-container">
+            <div class="bottom-2 row ">
+                <div class="skills">
+                    <h1 class="top-bottom"><b>MY SKILLS</b></h1>
+                </div>
             </div>
-
-        </div>
-
-        <div class="progress-bars row">
-
-            <div class="language-skills">
-                
-                <div class="progress-label">
-                    <div class="progress">                                                                                                                  
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML5</div>
-                    </div>
-                </div>
-
-                <div class="progress-label">
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">CSS3</div>
-                    </div>
-                </div>
-
-                <div class="progress-label">
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">JAVASCRIPT</div>
-                    </div>
-                </div>
-
-                <div class="progress-label">
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">JAVA</div>
-                    </div>
-                </div>
-
-                <div class="progress-label">
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">PYTHON</div>
-                    </div>
-                </div>
-
-                <div class="progress-label">
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">NODEJS</div>
-                    </div>
-                </div>
+            <div class="progress-bars row">
+                <div class="language-skills">
             
+                    <div class="progress-label left-right">
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML5</div>
+                        </div>
+                    </div>
+                    <div class="progress-label right-left">
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">CSS3</div>
+                        </div>
+                    </div>
+                    <div class="progress-label left-right">
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">JAVASCRIPT</div>
+                        </div>
+                    </div>
+                    <div class="progress-label right-left">
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">JAVA</div>
+                        </div>
+                    </div>
+                    <div class="progress-label left-right">
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">PYTHON</div>
+                        </div>
+                    </div>
+                    <div class="progress-label right-left">
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">NODEJS</div>
+                        </div>
+                    </div>
+            
+                </div>
             </div>
         </div>
     </div>
@@ -196,7 +189,7 @@
     <div class="non-bs-my-portfolio container-fluid" style="z-index: 10;" id="services-portfolio">
         <div class="row" style="z-index: 11;">
             <div class="top">
-                <h1><b>MY <span class="colored">PORTFOLIO</span></b></h1>
+                <h1 class="h1-header hidden"><b>MY <span class="colored">PORTFOLIO</span></b></h1>
             </div>
         </div>
 
@@ -234,7 +227,7 @@
     <div class="non-bs-contact-me container-fluid" style="z-index: 20;" id="email">
         <div class="row">
             <div class="top">
-                <h1><b>CONTACT<span class="colored"> ME</span></b></h1>
+                <h1 class="h1-header hidden"><b>CONTACT<span class="colored"> ME</span></b></h1>
             </div>
         </div>
 

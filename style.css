@@ -19,15 +19,47 @@ body::-webkit-scrollbar {
     color: #FFFFFF;
     text-align: center;
     margin: 0;
-    transition: all 0.3s ease-in-out;
 }
 
 .colored {
     color: #27AE60;
 }
 
-.top h1 {
-    font-size: 4rem !important;
+/* Intersection Observer */
+.hidden {
+    opacity: 0;
+    scale: 1;
+    transition: all 1s; 
+    
+}
+
+.show {
+    opacity: 1;
+    scale: 1.8;
+}
+
+.left-right {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 1s;
+}
+
+.right-left {
+    opacity: 0;
+    transform: translateX(50%);
+    transition: all 1s;
+}
+
+.top-bottom {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 1s;
+}
+
+.slide {
+    transform: translateX(0);
+    transform: translateY(0);
+    opacity: 1;
 }
 
 /* SIDE NAVBAR */
@@ -303,7 +335,7 @@ body::-webkit-scrollbar {
     box-shadow: 0px -1px 51px 32px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px -1px 51px 32px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px -1px 51px 32px rgba(0,0,0,0.75);
-    min-height: 200vh;
+    min-height: 100vh;
 }
 
 .non-bs-my-portfolio .row .top {
@@ -338,17 +370,10 @@ body::-webkit-scrollbar {
 .non-bs-modal img {
     width: 80%;
     height: auto;
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
     animation-name: zoom;
     animation-duration: 0.6s;
 }
 
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-  }
-  
 @keyframes zoom {
     from {transform:scale(0)} 
     to {transform:scale(1)}
