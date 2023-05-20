@@ -21,7 +21,7 @@ const observer = new IntersectionObserver((entries) => {
                 entry.target.classList.add("show");
             }
 
-            if (entry.target.classList.contains("top-bottom") || entry.target.classList.contains("left-right") || entry.target.classList.contains("right-left")) {
+            if (entry.target.classList.contains("bottom-top") || entry.target.classList.contains("left-right") || entry.target.classList.contains("right-left")) {
                 entry.target.classList.add("slide");
             }
         }
@@ -36,8 +36,8 @@ const observer = new IntersectionObserver((entries) => {
 let hidden = document.querySelectorAll(".hidden");
 let leftRight = document.querySelectorAll(".left-right");
 let rightLeft = document.querySelectorAll(".right-left");
-let topBottom = document.querySelectorAll(".top-bottom");
+let bottomTop = document.querySelectorAll(".bottom-top");
 hidden.forEach((el) => observer.observe(el));
 leftRight.forEach((el) => observer.observe(el));
 rightLeft.forEach((el) => observer.observe(el));
-topBottom.forEach((el) => observer.observe(el));
+bottomTop.forEach((el) => observer.observe(el));

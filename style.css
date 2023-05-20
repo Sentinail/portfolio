@@ -50,9 +50,9 @@ body::-webkit-scrollbar {
     transition: all 1s;
 }
 
-.top-bottom {
+.bottom-top {
     opacity: 0;
-    transform: translateY(-100%);
+    transform: translateY(50%);
     transition: all 1s;
 }
 
