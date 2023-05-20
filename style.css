@@ -219,6 +219,7 @@ body::-webkit-scrollbar {
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 50px;
+    transition: all 0.2s;
     
 }
 
@@ -226,7 +227,7 @@ body::-webkit-scrollbar {
 
 .curriculum-vitae:hover {
     cursor: pointer;
-    scale: 1.2;
+    scale: 1.1;
     background-color: #27AE60;
 
 }
@@ -546,6 +547,7 @@ form {
     overflow: hidden;
     background-color: #323B54;
     border-radius: 50%;
+    transition: all 0.2s;
 } 
 
 .icons .icon img {
