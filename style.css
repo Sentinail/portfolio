@@ -40,13 +40,13 @@ body::-webkit-scrollbar {
 
 .left-right {
     opacity: 0;
-    transform: translateX(-300px);
+    transform: translateX(-50%);
     transition: all 1s;
 }
 
 .right-left {
     opacity: 0;
-    transform: translateX(300px);
+    transform: translateX(50%);
     transition: all 1s;
 }
 
@@ -641,6 +641,7 @@ footer p{
         height: 100px;
         width: 100vw;
         top: 0px;
+        left: 0px;
         opacity: 100;
     }
 
