@@ -25,21 +25,25 @@ body::-webkit-scrollbar {
     color: #27AE60;
 }
 
+.non-bs-navbar, .non-bs-introduction, .non-bs-about-me, .non-bs-my-portfolio, .non-bs-contact-me {
+    overflow: hidden;
+}
+
 /* Introduction Animation */
 .boxes {
     position: absolute;
     z-index: 1;
-    width: 200px;
-    height: 20px;
+    width: 170px;
+    height: 10px;
     background-color: #27AE60;
     transition: all 1s;
-    opacity: 0;
+    opacity: 1;
     left: 0;
 }
 
 .boxes.box-slide {
-    left: calc(120%);
-    opacity: 1;
+    left: calc(100%);
+    opacity: 0;
 }
 
 /* Intersection Observer */
@@ -644,6 +648,14 @@ footer p{
 }
 
 @media screen and (max-width: 880px) {
+    .boxes {
+        opacity: 0;
+    }
+
+    .boxes.box-slide {
+        opacity: 1;
+    }
+
     .contacts {
         flex-direction: column;
     }
