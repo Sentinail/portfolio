@@ -16,6 +16,7 @@ for (let i = 0; i < portfolioImgs.length; i++) {
 // Intersection Animation
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
+        console.log(entry)
         if (entry.isIntersecting) {
             if (entry.target.classList.contains("hidden")) {
                 entry.target.classList.add("show");
@@ -24,14 +25,16 @@ const observer = new IntersectionObserver((entries) => {
             if (entry.target.classList.contains("bottom-top") || entry.target.classList.contains("left-right") || entry.target.classList.contains("right-left")) {
                 entry.target.classList.add("slide");
             }
+            
+            observer.unobserve(entry.target);
         }
 
         else {
-            entry.target.classList.remove("show")
+            entry.target.classList.remove("show");
             entry.target.classList.remove("slide");
         }
     })
-})
+}, {threshold: 0.3});
 
 let hidden = document.querySelectorAll(".hidden");
 let leftRight = document.querySelectorAll(".left-right");

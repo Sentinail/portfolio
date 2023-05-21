@@ -40,19 +40,19 @@ body::-webkit-scrollbar {
 
 .left-right {
     opacity: 0;
-    transform: translateX(-50%);
+    transform: translateX(-300px);
     transition: all 1s;
 }
 
 .right-left {
     opacity: 0;
-    transform: translateX(50%);
+    transform: translateX(300px);
     transition: all 1s;
 }
 
 .bottom-top {
     opacity: 0;
-    transform: translateY(50%);
+    transform: translateY(100px);
     transition: all 1s;
 }
 
