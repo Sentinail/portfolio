@@ -16,7 +16,6 @@ for (let i = 0; i < portfolioImgs.length; i++) {
 // Intersection Animation
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
         if (entry.isIntersecting) {
             if (entry.target.classList.contains("hidden")) {
                 entry.target.classList.add("show");
@@ -25,13 +24,12 @@ const observer = new IntersectionObserver((entries) => {
             if (entry.target.classList.contains("bottom-top") || entry.target.classList.contains("left-right") || entry.target.classList.contains("right-left")) {
                 entry.target.classList.add("slide");
             }
+
+            if (entry.target.classList.contains("boxes")) {
+                entry.target.classList.add("box-slide")
+            }
             
             observer.unobserve(entry.target);
-        }
-
-        else {
-            entry.target.classList.remove("show");
-            entry.target.classList.remove("slide");
         }
     })
 }, {threshold: 0.3});
@@ -44,3 +42,19 @@ hidden.forEach((el) => observer.observe(el));
 leftRight.forEach((el) => observer.observe(el));
 rightLeft.forEach((el) => observer.observe(el));
 bottomTop.forEach((el) => observer.observe(el));
+
+// Introduction Animation
+let introductionContainer = document.querySelector(".non-bs-introduction");
+let boxes = [];
+for (let i = 0; i < 20; i++) {
+    let randomHeight = Math.floor(Math.random() * introductionContainer.clientHeight);
+    let randomDelay = (Math.random() * 2);
+    let box = document.createElement("div");
+    box.style.top = randomHeight + "px";
+    box.style.transitionDelay = randomDelay + "s";
+    box.classList.add("boxes");
+    introductionContainer.append(box);
+    boxes.push(box);
+}
+
+boxes.forEach((el) => observer.observe(el));

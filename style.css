@@ -25,6 +25,23 @@ body::-webkit-scrollbar {
     color: #27AE60;
 }
 
+/* Introduction Animation */
+.boxes {
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    height: 20px;
+    background-color: #27AE60;
+    transition: all 1s;
+    opacity: 0;
+    left: 0;
+}
+
+.boxes.box-slide {
+    left: calc(120%);
+    opacity: 1;
+}
+
 /* Intersection Observer */
 .hidden {
     opacity: 0;
